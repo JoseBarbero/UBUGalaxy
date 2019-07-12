@@ -110,7 +110,7 @@ credentials.py
 .ds_store
 
 # inputs
-.fastq
-.fastqsanger
-/Forward
-/Reverse
+*.fastq
+*.fastqsanger
+/Forward/*
+/Reverse/*
