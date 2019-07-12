@@ -1,5 +1,5 @@
 # UBUGalaxy
 
-## University of Burgos Galaxy instance + utilities.
+University of Burgos Galaxy instance + utilities.
 
-## Contact: jabarbero@ubu.es
+Contact: jabarbero@ubu.es
