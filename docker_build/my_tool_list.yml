@@ -1,0 +1,32 @@
+tools:  
+- name: 'prinseq'
+  owner: 'iuc'
+  tool_panel_section_label: 'Quality'
+
+- name: 'trimmomatic'
+  owner: 'pjbriggs'
+  tool_panel_section_label: 'Quality'
+
+- name: 'spades'
+  owner: 'nml'
+  tool_panel_section_label: 'Assembly'
+
+- name: 'roary'
+  owner: 'jbarberoaparicio'
+  tool_panel_section_label: 'Pangenome Analysis'
+
+- name: 'prokka'
+  owner: 'crs4'
+  tool_panel_section_label: 'Annotation'
+  
+- name: 'abricate'
+  owner: 'iuc'
+  tool_panel_section_label: 'Screening'
+
+- name: 'barrnap'
+  owner: 'iuc'
+  tool_panel_section_label: 'Annotation'
+
+- name: 'add_input_name_as_column'
+  owner: 'mvdbeek'
+  tool_panel_section_label: 'Utils'
