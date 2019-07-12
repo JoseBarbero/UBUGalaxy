@@ -105,3 +105,10 @@ venv.bak/
 
 # credentials
 credentials.py
+
+# OSX
+.ds_store
+
+# inputs
+.fastq
+.fastqsanger
