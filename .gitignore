@@ -112,3 +112,5 @@ credentials.py
 # inputs
 .fastq
 .fastqsanger
+/Forward
+/Reverse
