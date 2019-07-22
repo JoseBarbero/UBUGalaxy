@@ -1,1 +1,1 @@
-docker run -p 8080:80 jbarberoaparicio/ubugalaxy
+docker run -p 8080:80 --name ubugalaxy jbarberoaparicio/ubugalaxy 
