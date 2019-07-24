@@ -30,3 +30,7 @@ tools:
 - name: 'add_input_name_as_column'
   owner: 'mvdbeek'
   tool_panel_section_label: 'Utils'
+
+- name: 'quast'
+  owner: 'iuc'
+  tool_panel_section_label: 'Genome Comparative Analysis'
