@@ -33,4 +33,17 @@ tools:
 
 - name: 'quast'
   owner: 'iuc'
-  tool_panel_section_label: 'Genome Comparative Analysis'
+  tool_panel_section_label: 'Pangenome Analysis'
+
+- name: 'concatenate_multiple_datasets'
+  owner: 'artbio'
+  tool_panel_section_label: 'Text Manipulation'
+
+- name: 'progressivemauve'
+  owner: 'iuc'
+  tool_panel_section_label: 'Assembly'
+
+- name: 'mlst'
+  owner: 'iuc'
+  tool_panel_section_label: 'Pangenome Analysis'
+
