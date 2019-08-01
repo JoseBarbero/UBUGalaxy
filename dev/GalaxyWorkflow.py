@@ -34,7 +34,7 @@ files.sort()
 for file in files:  # Flat list of files of both paths
     if not file.split("/")[-1].startswith("."):
         gi.tools.upload_file(file, hist_id)
-	input_files_names.append(file.split("/")[-1])
+    input_files_names.append(file.split("/")[-1])
 
 # Check datasets
 forward_list = []
@@ -111,7 +111,7 @@ output_dirs = ("roary", "prokka", "abricate")
 for subdir in output_dirs:
     if not os.path.exists(output_dir+"/"+subdir):
         os.makedirs(output_dir+"/"+subdir)
-
+"""
 # Download datasets
 for dataset in gi.histories.show_matching_datasets(output_history_id):
     if dataset["name"].lower().startswith(output_filter):
@@ -123,4 +123,17 @@ for dataset in gi.histories.show_matching_datasets(output_history_id):
         file_name = file_name.replace("Add_input_name_as_column", "ABRicate")
         file_name = file_name.lower()
         gi.histories.download_dataset(output_history_id, dataset["dataset_id"], output_dir+"/"+file_name.split("_")[0]+"/"+file_name, False)
+"""
+
+# Download datasets
+for dataset in gi.histories.show_matching_datasets(output_history_id):
+    #if dataset["name"].lower().startswith(output_filter):
+    file_name = dataset["name"]+"."+dataset["file_ext"]
+    #file_name = file_name.replace(" ", "_")
+    #file_name = file_name.replace(":", "_")
+    #file_name = file_name.replace(",", "")
+    #file_name = file_name.replace("RoaryPrueba", "Roary")
+    #file_name = file_name.replace("Add_input_name_as_column", "ABRicate")
+    #file_name = file_name.lower()
+    gi.histories.download_dataset(output_history_id, dataset["dataset_id"], file_name, False)
 print("DONE")
