@@ -9,9 +9,10 @@ def rename():
 			print("Example: \n renamefastq ./Forward \t will rename every file in Forward directory")
 		else:
 			for filename in os.listdir(sys.argv[1]):
-				name = filename.split(".")[0]
-				extension = filename.split(".")[1:]
-				os.rename(sys.argv[1]+"/"+filename, sys.argv[1]+"/"+name.split("_")[0]+"_"+name.split("_")[-2]+"."+".".join(extension))
+				if len(filename.split("_")) > 2:
+					name = filename.split(".")[0]
+					extension = filename.split(".")[1:]
+					os.rename(sys.argv[1]+"/"+filename, sys.argv[1]+"/"+name.split("_")[0]+"_"+name.split("_")[-2]+"."+".".join(extension))
 	else:
 		print("You need to provide a directory route.")
 
